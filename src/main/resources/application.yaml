@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: hexagonal-architecture
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order_hexagonal_db
+    password: qwer
+    username: raidenz
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
