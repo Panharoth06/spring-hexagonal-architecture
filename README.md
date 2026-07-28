@@ -13,6 +13,10 @@ business logic stays independent of frameworks, databases, and delivery mechanis
 Hexagonal Architecture divides an application into three concentric regions: **adapters** on the
 outside, **ports** as the boundary, and a pure **domain** at the center.
 
+![img.png](img.png)
+
+----
+
 ```mermaid
 flowchart LR
     HTTP([HTTP Client]) -->|request| IA[Input Adapter<br/>OrderController]
